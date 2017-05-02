@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <style name="clock">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="DeskClock" parent="android:Theme.Holo">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+
+
+
+    <style name="small_light">
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="timer_setup_digit">
+        <item name="android:textSize">@dimen/timer_setup_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="timer_setup_label">
+        <item name="android:textSize">@dimen/timer_setup_label_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="medium_light">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="widget_medium_thin">
+        <item name="android:textSize">@dimen/widget_medium_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="label_not_caps" parent="label">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="widget_label" parent="label">
+        <item name="android:textSize">@dimen/widget_label_font_size</item>
+    </style>
+
+    <style name="header">
+        <item name="android:textSize">@dimen/header_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="header_not_caps" parent ="header">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="big_thin">
+        <item name="android:textSize">@dimen/big_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="widget_big_thin" parent="big_thin">
+        <item name="android:textSize">@dimen/widget_big_font_size</item>
+    </style>
+
+    <style name="alarm_label">
+        <item name="android:textSize">@dimen/alarm_label_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="alarm_label_not_caps" parent="alarm_label">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="alarm_label_bold" parent="alarm_label">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="body">
+        <item name="android:textSize">@dimen/body_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="body_not_caps" parent="body">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="body_bold">
+        <item name="android:textSize">@dimen/body_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textSize">@dimen/button_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="timer_label">
+        <item name="android:textSize">@dimen/timer_label_font_size</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="dialog_button">
+        <item name="android:textSize">@dimen/dialog_button_font_size</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="bold_button" parent="button">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="dialpad">
+        <item name="android:textSize">@dimen/dialpad_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="city_name">
+        <item name="android:textSize">@dimen/city_name_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="city_time">
+        <item name="android:textSize">@dimen/city_time_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="TimePickerDialog" parent="android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Status Bar Styles -->
+    <style name="TextAppearance.StatusBar">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <!-- Notification content styles -->
+    <style name="TextAppearance.StatusBar.EventContent">
+        <item name="android:textSize">@dimen/notification_text_size</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent.Title">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">@dimen/notification_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent.Line2">
+        <item name="android:textSize">@dimen/notification_subtext_size</item>
+    </style>
+        <style name="TextAppearance.StatusBar.EventContent.Time">
+        <item name="android:textSize">@dimen/notification_subtext_size</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="ToastBarStyle">
+
+    </style>
+
+</resources>

@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.android.deskclock3"
+        android:versionCode="301" android:versionName="3.0.0"
+        android:sharedUserId="android.uid.system">
+
+    <original-package android:name="com.android.deskclock3" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- uses-permission android:name="android.permission.DEVICE_POWER" /-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+	<uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="17" ></uses-sdk>
+
+    <application android:label="@string/app_label"
+                 android:requiredForAllUsers="true"
+                 android:supportsRtl="true">
+                 
+    
+
+        <activity
+            android:name="com.android.deskclock3.heartbeatConfig"
+            android:label="@string/heartbeat_config_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--  category android:name="android.intent.category.LAUNCHER" /-->
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.android.deskclock3.OtherConfig"
+            android:label="@string/pos_config_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name="com.android.deskclock3.heartbeatReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.android.deskclock.ALARM_DDALERT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> 
+
+    </application>
+</manifest>
+

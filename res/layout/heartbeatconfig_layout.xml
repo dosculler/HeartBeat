@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+        <TextView
+	        android:id="@+id/textview01"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:textSize="22dp"
+	        android:text="@string/heartbeat_config_ping" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPing"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView
+	        android:id="@+id/pingtest1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22dp"
+	        android:text="@string/heartbeat_config_ip" />
+        <Button 
+            android:id="@+id/writeip"
+		    android:layout_height="wrap_content" 
+		    android:layout_width="wrap_content" 
+		    android:layout_alignParentRight="true"
+		    android:textSize="22dp"
+		    android:text="@string/heartbeat_config_write" />
+        <EditText
+		    android:id="@+id/editIP"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/pingtest1"
+		    android:layout_toLeftOf="@id/writeip"
+		    android:digits="0123456789."
+		    android:maxLength = "20"
+		    android:textSize="18dp"
+		    android:ems="20" >
+		</EditText>
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+        <TextView
+            android:id="@+id/textTime1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="22dp"
+	        android:text="@string/heartbeat_config_time" />
+        <Button 
+            android:id="@+id/writeTime"
+		    android:layout_height="wrap_content" 
+		    android:layout_width="wrap_content" 
+		    android:layout_alignParentRight="true"
+		    android:textSize="22dp"
+		    android:text="@string/heartbeat_config_write" />
+        
+        <EditText
+		    android:id="@+id/editTime"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/textTime1"
+		    android:digits="0123456789"
+		    android:maxLength = "5"
+		    android:textSize="20dp"
+		    android:ems="5" >
+		</EditText>
+		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/editTime"
+	        android:textSize="22dp"
+	        android:text="@string/seconds_label" />
+    </RelativeLayout>
+    
+
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:textSize="22dp"
+	        android:text="@string/heartbeat_config_autoclose" />
+
+        <CheckBox
+            android:id="@+id/checkBoxClose"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#A0FFFFFF"/>
+        
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:textSize="22dp"
+	        android:text="@string/heartbeat_config_wakelock" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWakelock"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="3"
+	        android:textSize="22dp"
+	        android:text="@string/heartbeat_config_radio" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRadio"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#A0FFFFFF"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+
+        <EditText
+            android:id="@+id/editTimeshutdown"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/shutdown_time"
+            android:digits="0123456789"
+            android:ems="3"
+            android:maxLength="3"
+            android:textSize="20dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/write_shutdown_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/heartbeat_config_write" />
+
+        <TextView
+            android:id="@+id/shutdown_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTimeshutdown"
+            android:layout_alignParentLeft="true"
+            android:text="@string/delay_poweroff"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fen"
+            android:textSize="22dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/write_poweron_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/heartbeat_config_write" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fen"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/poweron_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTimepoweron"
+            android:layout_alignParentLeft="true"
+            android:text="@string/delay_poweron"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/editTimepoweron"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/poweron_time"
+            android:digits="0123456789"
+            android:ems="3"
+            android:maxLength="3"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    
+    <Button 
+        android:id="@+id/deviceReboot"
+	    android:layout_height="wrap_content" 
+	    android:layout_width="fill_parent" 
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+	    android:layout_marginTop="20dp"
+	    android:textSize="22dp"
+	    android:text="@string/heartbeat_config_reboot" />
+    
+</LinearLayout>
